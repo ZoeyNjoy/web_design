@@ -1,0 +1,380 @@
+body{font-size: 1vw;}
+/* 메뉴바 */
+.menu{
+    width: 60%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+.menu ul{
+    position: absolute;
+    right: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    text-align: center;
+}
+.menu li a{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    font: bold 1.5rem/3rem 'Noto Sans KR','Roboto', sans-serif;    
+    color: #333;
+}
+.menu li:hover a{
+    color:#fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out;
+}
+
+/* #home 1page */
+#home .bg{
+    width: 100%;
+}
+.bg .txt{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.txt p{
+    text-align: center;
+    font: bold 10rem/2rem 'PPGrafier-BlackDisplay';
+    /* font-style: italic; */
+}
+
+
+/* #about 2page */
+#about .profile{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 8%;
+}
+.profile .left{
+    width: 40%;
+    position: relative;
+    left: 0;
+}
+
+.left .profileimg{
+    width: 70%;
+    margin-left: 15%;
+}
+.profileimg img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.left p{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font: 400 1.5rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+}
+.left p span{
+    font-weight: 700;
+    color: #b89dc0;
+}
+.profile .ani1{
+    animation: in .5s ease-in-out;
+}
+@keyframes in{
+    from{
+        left: -500px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
+.profile .right{
+    width: 60%;
+    font: 400 .9rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+}
+.about{
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.about p{
+    width: 100%;
+    display: flex;
+    border-left: 2px solid #333;
+}
+.about p:nth-child(3){
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+.about,
+.edu,
+.work,
+.skill{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.profile h2{
+    width: 100%;
+    margin-bottom: 2%;
+    font: 900 2rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+}
+.edu li,
+.work li{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 2px solid #333;
+}
+.about span,
+.edu span,
+.work span{
+    margin-left: 1%;
+    width: 15%;
+    font-weight: 600;
+}
+.skill ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill li{
+    width: 49%;
+    display: flex;
+    border-left: 2px solid #333;
+}
+.skill p:nth-child(1){
+    margin-left: 1%;
+    width: 20%;
+    font-weight: 600;
+}
+.skill .per{
+    height: 15px;
+    margin-top:2%;
+    margin-left: 50px;
+    background-color: #e7d9f0;
+}
+
+
+/* 3번째 페이지 */
+#web{
+    width: 100%;
+}
+#web .slide{
+    width: 100%;
+    position: relative;
+}
+.slide .main{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.slide .main img{
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+.slide .main a{
+    width: 200px;
+    position: absolute;
+    top: 55%;
+    left: 26%;
+    display: block;
+    font: bold 1.2rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+    color: inherit;
+}
+.slide .main a img{
+    width: 45px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.slide .main a:hover{
+    transform: translateX(20px);
+    transition: all .3s ease-in-out;
+}
+.slide .main .sub{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    transform: translateY(-50%);
+    width: 35%;
+}
+.slide .main .sub p:nth-child(1){
+    font: 900 2rem/3rem 'Noto Sans KR','Roboto', sans-serif;
+}
+.slide .main .sub p:nth-child(1) span{
+    font-size: .9rem;
+    margin-left: 10px;
+}
+.slide .main .sub p:nth-child(2){
+    font: 500 1.5rem/3rem 'Noto Sans KR','Roboto', sans-serif;
+}
+.slide .main .sub p:nth-child(3){
+    font: 300 1rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+    color:#777;
+}
+
+/* 5페이지 */
+#etc{
+    width: 100%;
+}
+#etc .slide{
+    position: relative;
+    width: 100%;
+}
+#etc .slide .slides{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 90%;
+    z-index: 3;
+}
+#etc .slides h1{
+    padding: 40px 150px;
+    box-sizing: border-box;
+}
+#etc .slides ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:95%;
+    height: 40%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#etc .slides li{
+    width: 24%;
+    margin-bottom: 20px;
+    position: relative;
+}
+#etc .slides li a{
+    width: 100%;
+    color: initial;
+}
+#etc .slides li:hover a{
+    opacity: 0.8;
+    transition: all .3s ease-in-out;
+}
+#etc .slide li a img{
+    width: 100%;
+    border: 1px solid #aaa;
+    box-shadow: 10px 5px 10px #999;
+    margin-bottom: 10px;
+}
+#etc .slide li a p{
+    font-size: 1rem;
+    line-height: 30px;
+}
+#etc .slide li a .tool{
+    width: 100%;
+    display: flex;
+}
+#etc .slide li a .tool img{
+    width: 25px;
+    margin-left: 6px;
+    box-shadow: none;
+    margin-bottom: 0;
+    border: none;
+}
+.profile .ani3{
+    animation: in2 .5s ease-in-out;
+}
+.profile .ani4{
+    animation: out2 .5s ease-in-out;
+}
+@keyframes in2{
+    from{
+        right: -500px;
+        opacity: 0;
+    }
+    to{
+        right: 0;
+        opacity: 1;
+    }
+}
+@keyframes out2{
+    from{
+        right: 0;
+        opacity: 1;
+    }
+    to{
+        righ: -500px;
+        opacity: 0;
+    }
+} 
+
+
+/* 6번째 페이지 */
+#foot{
+    position: relative;
+}
+#foot .f_txt{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+#foot .f_txt .title{
+    font: bold 4rem/1.5rem 'PPGrafier-BlackDisplay';
+    margin-bottom: 20px;
+}
+#foot .f_txt p{
+    font: bold 1.5rem/1.5rem 'Noto Sans KR','Roboto', sans-serif;
+}
+#foot .copy{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 400 1.2rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+}
+#foot .copy p:nth-child(2){
+    font: 400 0.8rem/1.5rem 'Noto Sans KR','Roboto', sans-serif;
+}
+#foot .f_txt span{
+    font-weight: bolder;
+}
+#foot .bgtxt:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    font: bold 10vh 'PPGrafier-BlackDisplay';
+    writing-mode: vertical-rl;
+    color: #fff;
+    z-index: 1;
+}
+#foot .bgtxt:nth-child(3){
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    font: bold 10vh 'PPGrafier-BlackDisplay';
+    writing-mode: vertical-rl;
+    color: #fff;
+    z-index: 1;
+}
